@@ -2,6 +2,22 @@
 
 This folder contains the training workflow for the CMSmark basic classification models based on gene expression features.
 
+### Requirements
+
+- **Python**: 3.10+  
+- **Python packages**:
+  - `pandas`
+  - `numpy`
+  - `matplotlib`
+  - `seaborn`
+  - `scikit-learn`
+
+You can install the required packages with:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
 ### Data and Splits
 - **Input data**: `trainset.csv` and `testset.csv` (under `../data/`), with samples labeled by CMS class.
 - **Train / external test split**: The script performs an internal stratified train/validation split on the training set and uses an external, untouched test set for the final evaluation.
@@ -68,6 +84,18 @@ Key test‑set visualizations include:
 - **Random Forest ROC curves (test set)**: `rf_roc_curve_test.png`  
   (see the attached ROC plot with similarly high AUC values).
 
+  ### How to Run
+
+1. **Prepare data**
+   - Place `trainset.csv` and `testset.csv` in the `../data/` directory relative to this folder.
+2. **Run the training script**
+   - From this `basic` directory, execute:
+   ```bash
+   python training_lr_rf.py
+   ```
+3. **Inspect results**
+   - Outputs (metrics tables, confusion matrices, ROC curves, feature‑importance plots, PCA subfolders, etc.) will be written into the `../result/` subdirectories, organized by feature‑selection method, feature group, and PCA setting.
+
 These results demonstrate that, using ANOVA‑based feature subsets (Excellent, Good and their combinations) and exploring PCA dimensions from 10 up to 400, both Logistic Regression and Random Forest achieve strong performance on the held‑out test set.
 
 ### Final Test‑Set Performance (ANOVA Features)
@@ -79,5 +107,8 @@ The table below summarizes the final performance on the test set when using ANOV
 | Precision  | 0.96                | 0.94          |
 | Recall     | 0.93                | 0.90          |
 | F1‑score   | 0.94                | 0.92          |
+
+
+
 
 
