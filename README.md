@@ -71,7 +71,7 @@ Key test‑set visualizations include:
 These results demonstrate that, using ANOVA‑based feature subsets (Excellent, Good and their combinations) and exploring PCA dimensions from 10 up to 400, both Logistic Regression and Random Forest achieve strong performance on the held‑out test set.
 
 ### Final Test‑Set Performance (ANOVA Features)
-The table below summarizes the final performance on the external test set when using ANOVA‑selected features:
+The table below summarizes the final performance on the test set when using ANOVA‑selected features:
 
 | Metric      | Logistic Regression | Random Forest |
 |------------|---------------------|---------------|
