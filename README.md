@@ -113,4 +113,8 @@ The table below summarizes the final performance on the test set when using ANOV
 <img width="800" height="700" alt="lr_roc_curve_test" src="https://github.com/user-attachments/assets/e7f6d25a-d104-4d3a-ab2c-da75977eeb1a" />
 
 
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
 
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
