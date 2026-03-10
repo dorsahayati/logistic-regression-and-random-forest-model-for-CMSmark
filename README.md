@@ -1,6 +1,6 @@
 ## CMSmark Basic Models
 
-This repository contains the training workflow for the CMSmark basic machine learning classification models based on gene expression features.
+This repository contains the training and testing workflow for the CMSmark basic machine learning classification models based on gene expression features.
 
 ### Requirements
 
