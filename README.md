@@ -1,6 +1,6 @@
 ## CMSmark Basic Models
 
-This folder contains the training workflow for the CMSmark basic classification models based on gene expression features.
+This repository contains the training workflow for the CMSmark basic classification models based on gene expression features.
 
 ### Requirements
 
@@ -109,6 +109,8 @@ The table below summarizes the final performance on the test set when using ANOV
 | F1‑score   | 0.94                | 0.92          |
 
 
+<img width="800" height="700" alt="rf_roc_curve_test" src="https://github.com/user-attachments/assets/df20555d-f466-40fa-bfda-a5edf8584841" />
+<img width="800" height="700" alt="lr_roc_curve_test" src="https://github.com/user-attachments/assets/e7f6d25a-d104-4d3a-ab2c-da75977eeb1a" />
 
 
 
